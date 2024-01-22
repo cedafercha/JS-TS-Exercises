@@ -12,10 +12,10 @@ while(leftPosition <= rightPosition) {
 
 	if(sortedArray[middlePosition] === valueToFind) {
 		valueNotFound = false;
-		console.log('Index in array: ', middlePosition);
+		console.log('Value in index: ', middlePosition);
 		return;
 	}
-	else if(sortedArray[middlePosition] < valueToFind){
+	else if(sortedArray[middlePosition] < valueToFind) {
 		leftPosition = middlePosition + 1;
 	}
 	else {
