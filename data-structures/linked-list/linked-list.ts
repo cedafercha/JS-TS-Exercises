@@ -45,5 +45,5 @@ list.append(1);
 list.append(2);
 list.append(3);
 
-const printNode = (node: LinkedListNode<number>) => console.log(`Value: ${node.value} / Next: ${node.next?.value}`);
+const printNode = <T>(node: LinkedListNode<T>) => console.log(`Value: ${node.value} / Next: ${node.next?.value}`);
 list.traverse(printNode);
